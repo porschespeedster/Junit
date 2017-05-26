@@ -13,4 +13,15 @@ public class Calculator {
 
         return sum;
     }
+
+    public int multiply(String expression) {
+
+        int result = 1;
+
+        for(String operand : expression.split(",")){
+            result*=Integer.valueOf(operand);
+        }
+
+        return result;
+    }
 }
